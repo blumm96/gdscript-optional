@@ -1,3 +1,7 @@
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 # Optional for Godot (GDScript)
 
 A Java-style `Optional<T>` implementation for Godot Engine (GDScript). Helps you safely wrap nullable values and avoid unsafe null checks.

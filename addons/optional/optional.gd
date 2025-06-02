@@ -1,3 +1,4 @@
+@tool
 extends RefCounted
 
 class_name Optional
@@ -44,3 +45,11 @@ func flat_map(f: Callable) -> Optional:
 		assert(result is Optional, "flat_map() must return an Optional instance.")
 		return result
 	return Optional.empty()
+
+func if_present(f: Callable) -> void:
+	if is_present():
+		f.call(value)
+
+func if_absent(f: Callable) -> void:
+	if is_absent():
+		f.call()
