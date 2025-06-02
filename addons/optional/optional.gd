@@ -1,5 +1,5 @@
 @tool
-extends EditorPlugin
+extends RefCounted
 
 class_name Optional
 
